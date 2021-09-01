@@ -80,7 +80,19 @@ function App() {
               const data = e.formData;
               setFormData(data);
               setJson(JSON.stringify(data, null, 2));
-            }} />
+            }}
+            onSubmit={(e) => {
+              fetch('/playbooks', {
+                method: 'post',
+                headers: {
+                  'Accept': 'application/json, text/plain, */*',
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+              }).then(res => res.json())
+                .then(res => console.log(res));
+            }}
+          />
         </div>
         <div className="col-md-6">
           <pre>
