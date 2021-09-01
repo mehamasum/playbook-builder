@@ -104,8 +104,20 @@ function App() {
                   'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(formData)
-              }).then(res => res.json())
-                .then(res => console.log(res));
+              }).then((response) => {
+                if (response.ok) {
+                  return response.json();
+                } else {
+                  throw new Error('Something went wrong');
+                }
+              })
+              .then((responseJson) => {
+                alert('Saved!');
+              })
+              .catch((error) => {
+                console.log(error);
+                alert('Something went wrong!');
+              });
             }}
           />
         </div>
