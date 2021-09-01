@@ -2,8 +2,8 @@ export default {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "http://example.com/example.json",
   "type": "object",
-  "title": "The root schema",
-  "description": "The root schema comprises the entire JSON document.",
+  "title": "Label Groups and Labels",
+  "description": "Add Label Groups and their Labels here",
   "default": {},
   "examples": [
       {
@@ -49,31 +49,32 @@ export default {
       "labels"
   ],
   "properties": {
+    "label_type": {
+        "$id": "#/properties/label_type",
+        "type": "string",
+        "title": "Label Group",
+        "description": "Add the name of the label group. example: target_audience",
+        "default": "",
+        "examples": [
+            "target_audience"
+        ]
+    },
       "has_single_value": {
           "$id": "#/properties/has_single_value",
           "type": "boolean",
-          "title": "The has_single_value schema",
+          "title": "Single Select",
           "description": "An explanation about the purpose of this instance.",
           "default": false,
           "examples": [
               false
           ]
       },
-      "label_type": {
-          "$id": "#/properties/label_type",
-          "type": "string",
-          "title": "The label_type schema",
-          "description": "An explanation about the purpose of this instance.",
-          "default": "",
-          "examples": [
-              "target_audience"
-          ]
-      },
+      
       "labels": {
           "$id": "#/properties/labels",
           "type": "array",
-          "title": "The labels schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Labels",
+          "description": "Labels under this group",
           "default": [],
           "examples": [
               [
@@ -89,8 +90,6 @@ export default {
           "items": {
               "$id": "#/properties/labels/items",
               "type": "object",
-              "title": "The items schema",
-              "description": "An explanation about the purpose of this instance.",
               "default": {},
               "examples": [
                   [
@@ -133,8 +132,8 @@ export default {
                   "label": {
                       "$id": "#/properties/labels/items/properties/label",
                       "type": "string",
-                      "title": "The label schema",
-                      "description": "An explanation about the purpose of this instance.",
+                      "title": "Label",
+                      "description": "example: 18-40 year olds",
                       "default": "",
                       "examples": [
                           "18-40 year olds"
