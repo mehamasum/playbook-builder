@@ -14,55 +14,70 @@ function App() {
   const [formData, setFormData] = useState(null);
 
   const schema = {
-    "definitions": {
-      "resources": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "default": "Default name"
-          }
-        }
-      }
-    },
     "type": "object",
     "properties": {
-      "workflows": {
-        "type": "array",
-        "title": "A list of workflows",
-        "default": [],
-        "items": workflowSchema,
+      "title": {
+        "type": "string",
+        "title": "Name",
+        "default": "Playbook name"
       },
-      "labels": {
-        "type": "array",
-        "title": "A list of labels",
-        "default": [],
-        "items": labelSchema,
+      "color": {
+        "type": "string",
+        "title": "Color",
+        "default": "#e0e0e0"
       },
-      "custom_fields": {
-        "type": "array",
-        "title": "A list of custom fields",
-        "default": [],
-        "items": customFieldsSchema,
+      "icon": {
+        "type": "string",
+        "title": "Icon",
+        "default": "content"
       },
-      "templates": {
-        "type": "array",
-        "title": "A list of templates",
-        "default": [],
-        "items": templateSchema,
+      "image": {
+        "type": "string",
+        "title": "Hero image",
+        "default": "https://via.placeholder.com/150"
       },
-      "campaigns": {
-        "type": "array",
-        "title": "A list of campaigns",
-        "default": [],
-        "items": campaignSchema,
+      "fixture": {
+        "type": "object",
+        "title": "Resources",
+        "properties": {
+          "workflows": {
+            "type": "array",
+            "title": "A list of workflows",
+            "default": [],
+            "items": workflowSchema,
+          },
+          "labels": {
+            "type": "array",
+            "title": "A list of labels",
+            "default": [],
+            "items": labelSchema,
+          },
+          "customFields": {
+            "type": "array",
+            "title": "A list of custom fields",
+            "default": [],
+            "items": customFieldsSchema,
+          },
+          "templates": {
+            "type": "array",
+            "title": "A list of templates",
+            "default": [],
+            "items": templateSchema,
+          },
+          "campaigns": {
+            "type": "array",
+            "title": "A list of campaigns",
+            "default": [],
+            "items": campaignSchema,
+          },
+          "tasks": {
+            "type": "array",
+            "title": "A list of tasks",
+            "default": [],
+            "items": taskSchema,
+          }
+        }
       },
-      "tasks": {
-        "type": "array",
-        "title": "A list of tasks",
-        "default": [],
-        "items": taskSchema,
-      }
     }
   };
 
