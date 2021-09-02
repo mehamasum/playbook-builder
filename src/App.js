@@ -5,6 +5,7 @@ import customFieldsSchema from './schemas/customFields';
 import labelSchema from './schemas/label';
 import templateSchema from './schemas/template';
 import taskSchema from './schemas/task';
+import eventSchema from './schemas/event';
 
 import './App.css';
 import { useState } from "react";
@@ -75,6 +76,12 @@ function App() {
             "title": "A list of tasks",
             "default": [],
             "items": taskSchema,
+          },
+          "events": {
+            "type": "array",
+            "title": "A list of events",
+            "default": [],
+            "items": eventSchema
           }
         }
       },
