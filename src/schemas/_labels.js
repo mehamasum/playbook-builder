@@ -2,7 +2,6 @@ export default {
   "$id": "#/properties/labels",
   "type": "array",
   "title": "Labels",
-  "description": "An explanation about the purpose of this instance.",
   "default": [],
   "examples": [
       [
@@ -14,7 +13,7 @@ export default {
   "items": {
       "$id": "#/properties/labels/items",
       "type": "string",
-      "title": "Labels items",
+      "title": "Label",
       "description": "You need to define these labels under some label types",
       "default": "",
       "examples": [

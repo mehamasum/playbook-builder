@@ -56,10 +56,10 @@ export default {
             ]
         },
         "description": {
-            "$id": "#/properties/title",
+            "$id": "#/properties/description",
             "type": "string",
             "title": "Event description",
-            "description": "An explanation about the purpose of this instance.",
+            "description": "An explanation about the purpose of this Event.",
             "default": "",
             "examples": [
                 "We interview Usain Bolt"
@@ -68,8 +68,8 @@ export default {
         "startDate": {
             "$id": "#/properties/startDate",
             "type": "string",
-            "title": "The startDate schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Start Date in days from today",
+            "description": "i.e. 1 day",
             "default": "",
             "examples": [
                 "1 day"
@@ -78,8 +78,8 @@ export default {
         "endDate": {
             "$id": "#/properties/endDate",
             "type": "string",
-            "title": "The endDate schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "End Date in days from today",
+            "description": "i.e. 7 days",
             "default": "",
             "examples": [
                 "1 day"
