@@ -64,7 +64,6 @@ export default {
           "enum": [
               "textarea",
               "multichoice",
-              "date",
               "string",
               "multi_select_dropdown",
               "rich_text_field",
