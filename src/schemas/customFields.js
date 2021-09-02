@@ -58,9 +58,19 @@ export default {
       "type": {
           "$id": "#/properties/type",
           "type": "string",
-          "title": "The type schema",
+          "title": "Type",
           "description": "An explanation about the purpose of this instance.",
-          "default": "",
+          "default": "string",
+          "enum": [
+              "textarea",
+              "multichoice",
+              "date",
+              "string",
+              "multi_select_dropdown",
+              "rich_text_field",
+              "dropdown",
+              "date"
+          ],
           "examples": [
               "multi_select_dropdown"
           ]

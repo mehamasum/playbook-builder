@@ -205,7 +205,7 @@ export default {
                         "type": "string",
                         "title": "Field Type",
                         "default": "custom_field",
-                        "enum": ["system_field", "custom_field"],
+                        "enum": ["system_field", "custom_field", "label"],
                         "examples": [
                             "custom_field"
                         ]
