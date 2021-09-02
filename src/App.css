@@ -15,3 +15,11 @@
 .ant-form-item-label > label {
   font-weight: bold;
 }
+
+.steps-action {
+  margin: 24px 0;
+}
+
+.editor {
+  padding: 16px 24px;
+}

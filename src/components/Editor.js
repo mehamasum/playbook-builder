@@ -53,7 +53,7 @@ export default function Editor({ initialData = null }) {
 
 
   return (
-    <div>
+    <div className="editor">
       <Row gutter={32}>
         <Col span={24}>
           <Steps current={current}>

@@ -137,7 +137,7 @@ export default {
                         "type": "integer",
                         "title": "Step duration",
                         "description": "An explanation about the purpose of this instance.",
-                        "default": 0,
+                        "default": 1,
                         "examples": [
                             1
                         ]
@@ -213,8 +213,6 @@ export default {
                                     "items": {
                                         "$id": "#/properties/steps/items/properties/substeps/items/properties/actions/items",
                                         "type": "object",
-                                        "title": "Action details",
-                                        "description": "An explanation about the purpose of this instance.",
                                         "default": {},
                                         "examples": [
                                             [

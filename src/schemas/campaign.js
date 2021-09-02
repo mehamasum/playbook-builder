@@ -94,7 +94,7 @@ export default {
         "startDate": {
             "$id": "#/properties/startDate",
             "type": "string",
-            "title": "Campaign start date from today",
+            "title": "Start date from today (in days)",
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
@@ -104,7 +104,7 @@ export default {
         "endDate": {
             "$id": "#/properties/endDate",
             "type": "string",
-            "title": "Campaign end date from today",
+            "title": "End date from today (in days)",
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [

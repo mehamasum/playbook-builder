@@ -121,8 +121,7 @@ export default {
         "startDate": {
             "$id": "#/properties/startDate",
             "type": "string",
-            "title": "The startDate schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Start date from today (in days)",
             "default": "",
             "examples": [
                 "1 day"
@@ -131,8 +130,7 @@ export default {
         "dueDate": {
             "$id": "#/properties/dueDate",
             "type": "string",
-            "title": "The dueDate schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Due date from today (in days)",
             "default": "",
             "examples": [
                 "1 day"
