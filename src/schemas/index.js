@@ -5,6 +5,7 @@ import labelSchema from './label';
 import templateSchema from './template';
 import taskSchema from './task';
 import eventSchema from './event';
+import workRequestSchema from './workRequest';
 
 const schema = {
   "type": "object",
@@ -41,7 +42,7 @@ const schema = {
         },
         "customFields": {
           "type": "array",
-          "title": "A list of custom fields",
+          "title": "A list of Custom Fields",
           "default": [],
           "items": customFieldsSchema,
         },
@@ -74,6 +75,12 @@ const schema = {
           "title": "A list of events",
           "default": [],
           "items": eventSchema
+        },
+        "workRequests": {
+          "type": "array",
+          "title": "A list of Work Requests",
+          "default": [],
+          "items": workRequestSchema
         }
       }
     },

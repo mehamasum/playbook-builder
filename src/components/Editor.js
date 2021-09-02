@@ -17,7 +17,8 @@ const steps = [
   'Campaigns',
   'Workflows',
   'Tasks',
-  'Events'
+  'Events',
+  'Work Requests'
 ];
 
 export default function Editor({ initialData = null }) {
