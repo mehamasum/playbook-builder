@@ -2,7 +2,6 @@ export default {
   "$id": "#/properties/brief/properties/field_values",
   "type": "array",
   "title": "Field values",
-  "description": "An explanation about the purpose of this instance.",
   "default": [],
   "examples": [
       [
@@ -24,8 +23,6 @@ export default {
   "items": {
       "$id": "#/properties/brief/properties/field_values/items",
       "type": "object",
-      "title": "Field value items",
-      "description": "An explanation about the purpose of this instance.",
       "default": {},
       "examples": [
           [
@@ -76,7 +73,7 @@ export default {
               "$id": "#/properties/brief/properties/field_values/items/properties/label",
               "type": "string",
               "title": "Field",
-              "description": "An explanation about the purpose of this instance.",
+              "description": "e.g. Brief",
               "default": "",
               "examples": [
                   "Brief"
@@ -86,7 +83,6 @@ export default {
               "$id": "#/properties/brief/properties/field_values/items/properties/value",
               "type": "array",
               "title": "Values",
-              "description": "An explanation about the purpose of this instance.",
               "default": [],
               "examples": [
                   [
@@ -97,8 +93,8 @@ export default {
               "items": {
                   "$id": "#/properties/brief/properties/field_values/items/properties/value/items",
                   "type": "string",
-                  "title": "Define List of Values",
-                  "description": "An explanation about the purpose of this instance.",
+                  "title": "Value",
+                  "description": "e.g. <p><strong>Swift Steph Basketball High-Top</strong>We are launching a new product</p>",
                   "default": "",
                   "examples": [
                       [

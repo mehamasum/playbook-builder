@@ -2,7 +2,7 @@ import fieldValuesSchema from './_field_values';
 
 export default {
   "$id": "#/properties/brief",
-  "type": "null", // TODO: "object"
+  "type": "object", // TODO: "object"
   "title": "Brief",
   "description": "An explanation about the purpose of this instance.",
   "default": null,
